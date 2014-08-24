@@ -11,7 +11,6 @@
 // Calculate IDF: divide the total number of documents by the number of documents containing the term, and then take the logarithm of that quotient
 // Compute TF-IDF for all terms (the product of two statistics, term frequency and inverse document frequency)
 // Filter out stop words
-// Use global word count rather than word doc count
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 // GLOBAL VARIABLES
@@ -46,7 +45,7 @@ String stopWords[];
 void setup() {
 
   // Calculate Term Frequency
-  fetch_TF("document1.txt");
+  fetch_TF("document1.txt"); // Change to document2.txt or document3.txt to compare other docs
   count_TF();
   print_TF();
 
